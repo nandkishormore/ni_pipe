@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: index.html
-    destination: /var/www/html/
+  - source: /
+    destination: /var/www/html/WordPress
 hooks:
   BeforeInstall:
-    - location: scripts/dep.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
